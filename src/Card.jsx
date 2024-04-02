@@ -10,7 +10,7 @@ import { faQrcode } from '@fortawesome/free-solid-svg-icons';
 const Card = () => {
     return (
         <div className='mt-10  flex justify-center'>
-        <div className="card w-[400px] border-2 bg-white shadow-xl">
+        <div className="card lg:w-[400px] w-[350px] border-2 bg-white shadow-xl">
   <div className=" flex justify-center">
     <img src="https://i.ibb.co/rQ35nKP/istockphoto-1354893114-612x612.jpg" alt="Shoes" className="rounded-xl w-[170px] " />
   </div>
@@ -23,7 +23,6 @@ const Card = () => {
     <FontAwesomeIcon icon={faTwitter} />
     <FontAwesomeIcon icon={faFacebook}/>
     <FontAwesomeIcon icon={faQrcode}/>
-
     </div>
     <div className='mt-6'>
       <button className=" bg-blue-700 border rounded-full w-full p-2  ">Buy Now</button>
