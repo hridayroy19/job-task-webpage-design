@@ -4,11 +4,12 @@
   import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   import { faBell } from '@fortawesome/free-regular-svg-icons'; 
   import { faGear } from '@fortawesome/free-solid-svg-icons'; // Import the solid version of the gear icon
+import { Link } from 'react-router-dom';
 
 
 
   const navigation = [
-      { name: 'Dashboard', href: '/deshboard', current: true },
+      { name: 'Dashboard', href: '/dashboard', current: true },
       { name: 'Finances', href: '#', current: false },
       { name: 'Send and Request', href: '#', current: false },
       { name: 'Deals', href: '#', current: false },
@@ -42,13 +43,14 @@
                   </Disclosure.Button>
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                  <div className="flex flex-shrink-0 items-center">
+                 <Link to={"/"}>
+                 <div className="flex flex-shrink-0 items-center">
                     <img
                       className="h-8 w-auto"
                       src="https://i.ibb.co/26dPy52/kisspng-paypal-logo-payment-business-sales-5af84e85b30c26-5507677615262224697334-1.png"
                       alt="logo"
                     />
-                  </div>
+                  </div></Link>
                   <div className="hidden sm:ml-6 lg:block md:hidden sm:block">
                     <div className="flex space-x-4">
                       {navigation.map((item) => (
