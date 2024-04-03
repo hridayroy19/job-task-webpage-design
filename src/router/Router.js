@@ -2,8 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLaout from "../leaout/MainLaout";
 import App from "../App";
 import Seller from "../dashboard/Seller";
-import SellerTools from "../dashboard/SellerTools"
-
+import SellerTools from "../dashboard/SellerTools";
 
 const router = createBrowserRouter([
   {
@@ -17,11 +16,13 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Seller />,
-        children:[{
+        children: [
+          {
             path: "sellTols",
-            element: <SellerTools/>
-        }]
-      },    
+            element: <SellerTools />,
+          },
+        ],
+      },
     ],
   },
 ]);

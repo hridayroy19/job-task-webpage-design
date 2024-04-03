@@ -42,7 +42,7 @@ import { Link } from 'react-router-dom';
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                  <Link to={"/"}>
-                 <div className="flex flex-shrink-0 items-center">
+                 <div className="flex flex-shrink-0 md:ml-14 items-center">
                     <img
                       className="h-8 w-auto"
                       src="https://i.ibb.co/26dPy52/kisspng-paypal-logo-payment-business-sales-5af84e85b30c26-5507677615262224697334-1.png"
