@@ -44,8 +44,8 @@ import { Link } from 'react-router-dom';
                  <Link to={"/"}>
                  <div className="flex flex-shrink-0 md:ml-14 items-center">
                     <img
-                      className="h-8 w-auto"
-                      src="https://i.ibb.co/26dPy52/kisspng-paypal-logo-payment-business-sales-5af84e85b30c26-5507677615262224697334-1.png"
+                      className="h-8 text-white w-auto"
+                      src="https://i.ibb.co/5vjZjJX/Pay-Pal-icon-white-png-vertical.png"
                       alt="logo"
                     />
                   </div></Link>

@@ -4,8 +4,8 @@ import SellingOnline from "./SellingOnline";
 const SellerTools = () => {
   return (
     <>
-      <div>
-        <h1 className="text-xl text-black font-medium"> Seller tools </h1>
+      <div className="px-12">
+        <h1 className="text-xl  text-black font-medium"> Seller tools </h1>
         <p>
           sell online easily and grow your business with seller Tools create
           paypal <br /> buttons, get instant payment notifications and do much
