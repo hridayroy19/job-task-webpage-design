@@ -6,8 +6,6 @@
   import { faGear } from '@fortawesome/free-solid-svg-icons'; // Import the solid version of the gear icon
 import { Link } from 'react-router-dom';
 
-
-
   const navigation = [
       { name: 'Dashboard', href: '/dashboard', current: true },
       { name: 'Finances', href: '#', current: false },
@@ -29,8 +27,8 @@ import { Link } from 'react-router-dom';
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl  sm:px-6 lg:px-8">
-              <div className="relative px-4 lg:px-3 flex h-16 items-center justify-between">
-                <div className="absolute  inset-y-0 left-0 flex items-center  sm:hidden">
+              <div className="relative px-4  flex h-16 items-center justify-between">
+                <div className="absolute  inset-y-0 left-0 flex items-center lg:hidden">
                   {/* Mobile menu button*/}
                   <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white">
                     <span className="absolute -inset-0.5" />
@@ -84,7 +82,7 @@ import { Link } from 'react-router-dom';
               </div>
             </div>
 
-            <Disclosure.Panel className="sm:hidden">
+            <Disclosure.Panel className="lg:hidden">
               <div className="space-y-1 px-2 pb-3 pt-2">
                 {navigation.map((item) => (
                   <Disclosure.Button

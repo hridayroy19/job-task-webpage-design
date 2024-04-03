@@ -8,7 +8,7 @@ const navigation = [
     { name: 'Data & privicy', href: '#', current: false },
     { name: 'Payments', href: '#', current: false },
     { name: 'Notifications', href: '#', current: false },
-    { name: 'Seller Tools', href: '#', current: false },
+    { name: 'Seller Tools', href: '/dashboard/sellTols', current: false },
     { name: 'Statements', href: '#', current: false },
   ]
 
@@ -24,7 +24,7 @@ const SubNavbar = () => {
     <>
       <div className="mx-auto w-full  ">
         <div className="relative px-4 shadow-xl mb-20 lg:px-3 flex h-16 text-center items-center justify-center">
-          <div className="absolute  inset-y-0 left-0 flex items-center  sm:hidden">
+          <div className="absolute  inset-y-0 left-0 flex items-center  px-6 lg:hidden">
             {/* Mobile menu button*/}
             <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-black">
               <span className="absolute -inset-0.5" />
@@ -58,7 +58,7 @@ const SubNavbar = () => {
         </div>
       </div>
 
-      <Disclosure.Panel className="sm:hidden">
+      <Disclosure.Panel className="lg:hidden">
         <div className="space-y-1 px-2 pb-3 pt-2">
           {navigation.map((item) => (
             <Disclosure.Button
